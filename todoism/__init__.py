@@ -4,7 +4,7 @@ from flask import Flask
 from todoism.blueprints.home import home_bp
 from todoism.settings import config
 from todoism.extensions import db, migrate
-
+from todoism.models import User, Item
 
 def create_app(config_name=None):
     if config_name is None:
